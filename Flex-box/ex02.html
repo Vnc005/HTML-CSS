@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+</head>
+    <style>
+        body{
+            background-color: lightsalmon;
+           
+        }
+        .container{
+            background-color: yellow;
+            display:flex;
+            flex-flow:column nowrap;
+            justify-content: center;
+            align-items: center;
+            padding: 10vh;
+            margin:5px;
+            width: 50px;
+
+        }
+        .item{
+            flex:auto;
+            background-color:lightblue;
+            
+        }
+        .item01{
+            flex:auto;
+            background-color:lightgreen;
+        }
+        .item02{
+            flex:auto;
+            background-color:lightyellow;
+        }
+        .item03{
+            flex:auto;
+            background-color:lightgray;
+        }
+        .item04{
+            flex:auto;
+            background-color:lightcoral;
+        }
+        .item05{
+            flex:auto;
+            background-color:lightsalmon;
+        }
+    </style>
+<b>
+    <div class="container">
+        <div class="item" style="align-self: flex-end;">Coluna1</div>
+
+        <div class="item01" style="order: 5;">Coluna2</div>
+
+        <div class="item02" style="order: -5;">Coluna3</div>
+
+        <div class="item03">Coluna4</div>
+
+        <div class="item04">Coluna5</div>
+
+        <div class="item05">Coluna6</div>
+        
+    </div>
+        
+    </body>
+</html>
