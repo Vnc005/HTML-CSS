@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            
+            font-family: 'Times New Roman', Times, serif;
+            box-sizing: flex;
+        }
+        body{
+            background-color: lightskyblue;
+        }
+        header{
+            display: flex;
+            flex-flow:row wrap;
+            justify-content: space-between;
+
+        }
+        .top{
+            color:aliceblue;
+            font-size: 20px;
+            margin: 10px 0px 0px 550px;
+         
+        }
+        section{
+             display: flex;
+             flex-flow:row wrap;
+             justify-content: space-between;
+        }
+        .box{
+            
+            background-color: aquamarine;
+            padding: 150px;
+            margin: 50px 60px 50px 450px;
+            height: 10px;
+            width: -20px;
+            font-size: 25px;
+            
+
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+          <div class="top">
+            <h1>Verificador de idade</h1>
+            <p>atualizado</p>
+          </div>
+    </header>
+    <main>
+        <section>
+            <div class="box" >
+            Digite sua idade: <input type="number" name="txt" id="txt" [1]>
+            <p>
+            Qual sexo:
+             Mas <input type="radio" name="sxs" id="sxsm" checked>
+             Fem <input type="radio" name="sxs" id="sxsf">
+             <p>
+             <input type="button" value="verificar" onclick="Carregar()" ></div> 
+
+             <div id="res"></div>
+
+
+           
+        </section>
+    </main>
+   
+</body>
+<script>
+    function Carregar(){
+         let data = new Date()
+         let ano = data.getFullYear()
+         let idade = document.getElementById("txt")
+         let Res = document.querySelector("div#res")
+    
+          
+     if(idade.value.length == 0 || Number (idade.value) < ano){
+        document("vc é maior de idade vai trabalhar")
+     }
+     else{
+         
+     }
+  
+    }
+   
+</script>
+</html>
