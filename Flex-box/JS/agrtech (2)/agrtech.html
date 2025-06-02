@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            font-size: 25px;
+            box-sizing: border-box;
+            margin:0px;
+            padding: 0px;
+
+        }
+        .container{
+            display:flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 10px 10px;
+            gap: 14px;
+
+        }
+        header{
+            background-color: lightcoral;
+          
+        }
+        h1{  
+            flex: auto;
+            color: aquamarine;
+            text-align: center;
+            font-size:50px ;
+             margin:7px;
+            padding: 10px;
+            transform:translateX(-220px);
+
+        }
+        .icone-irrigacao{
+            color: aquamarine;
+            font-size:50px;
+            margin:7px;
+            padding: 10px;
+
+        }
+        /* search */
+         .input-icone{
+            position: relative;
+            display:inline-block;
+
+        }
+        .txt{
+            font-size:28px;
+            margin:6px;
+            padding: 10px 10px 10px 50px;
+            background-color:white;
+            border: 1px solid;
+           
+            width: 250px;
+        }
+       .i-procure{
+        background-color: red;
+        color:black;
+        padding: 16px;
+        border-radius: 5px;
+        cursor:pointer;
+        transform:translateY(-0px);
+        transform:translateX(55px);
+        
+       }
+       .i-procure:hover{
+        background-color: yellow;
+        transition-duration: 1s;
+       }
+        body{
+            background-color: azure;
+
+        }
+        .location{
+         
+            margin:10px;
+            padding: 300px;
+            width: 100px;
+            animation: move 10s infinite; 
+        }
+        @keyframes move{
+            0%{
+            background-image: url("Bar.jpeg");
+            opacity: 1;
+        }
+            50%{
+                background-image: url("Sinuca.jpeg");
+                opacity: 0.9;
+            }
+            100%{
+                background-image: url("HR/joao\ bosco.jpeg");
+                opacity: 0.9;
+            }
+        }
+        
+       
+        
+        
+        footer{
+
+        }
+    </style>
+</head>
+<header>
+    <div class="container">
+    <i class="fa-solid fa-face-smile icone-irrigacao"></i>
+       <h1>Monitoramento de irrigacao</h1>
+            <div class="input-icone">
+            <i class="fa-solid fa-magnifying-glass i-procure"></i>
+                <input type="text" name="txt" class="txt" placeholder="Digite local">
+        </div>
+    </div>
+</header>
+<body>
+    <main>
+        <nav>
+            <div class="container">
+                <div class="location">
+
+                </div>
+            </div>
+        
+
+        </nav>
+    </main>
+<footer>
+
+</footer>
+</body>
+</html>
