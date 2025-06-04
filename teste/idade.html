@@ -48,7 +48,7 @@
     <header>
           <div class="top">
             <h1>Verificador de idade</h1>
-            <p>atualizado</p>
+            
           </div>
     </header>
     <main>
@@ -60,9 +60,10 @@
              Mas <input type="radio" name="sxs" id="sxsm" checked>
              Fem <input type="radio" name="sxs" id="sxsf">
              <p>
-             <input type="button" value="verificar" onclick="Carregar()" ></div> 
+                <div id="res">
+             <input type="button" value="verificar" onclick="Carregar()" ></div> </div>
 
-             <div id="res"></div>
+             
 
 
            
@@ -79,13 +80,11 @@
     
           
      if(idade.value.length == 0 || Number (idade.value) < ano){
-        document("vc é maior de idade vai trabalhar")
+        Res.style.textalign = 'center';
+        Res.innerHTML =  `vc é um garoto`;
      }
-     else{
-         
-     }
-  
+    
     }
-   
+
 </script>
 </html>
