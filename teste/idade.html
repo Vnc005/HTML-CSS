@@ -79,11 +79,14 @@
          let Res = document.querySelector("div#res")
     
           
-     if(idade.value.length == 0 || Number (idade.value) < ano){
-        Res.style.textalign = 'center';
-        Res.innerHTML =  `vc é um garoto`;
+     if(idade.value.length == 0 || Number (idade.value) > ano){
+       alert('erro')
      }
-    
+     else{
+        var Fano = ano - Number(idade.value) 
+        Res.innerHTML = `seu ano de nascimento: ${Fano}` 
+         
+     }
     }
 
 </script>
